@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service
 
 class User(var name: String,var age: Integer)
 {
-//	override def toString():String = {
-//	  name + ":" + age
-//	}
-	def desc = name + ":" + age
+  //    override def toString():String = {
+  //      name + ":" + age
+  //    }
+  def desc = name + ":" + age
 }
 
 trait CURDService[T] {
@@ -18,7 +18,7 @@ trait CURDService[T] {
 @Service
 class UserService extends CURDService[User] {
   def findAllUsers = List(
-      new User("jiahut",24),
-      new User("beibei",23)
-	)
+    new User("jiahut",24),
+    new User("beibei",23)
+  )
 }

@@ -14,7 +14,7 @@ To run the webapp you use sbt, although it can be a memory hog so you might want
 
 Then start container within `sbt` shell
 
-    > container:start # this start the application in an embedded Jetty web container.
+    > runMain com.github.jiahut.demo.Launcher
 
 ### Package
 

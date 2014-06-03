@@ -16,4 +16,5 @@ class HomeController {
     model.addAttribute("title", "scala plus spring4")
     "index"
   }
+
 }

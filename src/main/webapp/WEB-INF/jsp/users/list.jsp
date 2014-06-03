@@ -5,4 +5,3 @@
         <li>${user.desc() }</li>
     </c:forEach>
 </ul>
-
