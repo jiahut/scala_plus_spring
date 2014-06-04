@@ -1,4 +1,4 @@
-package com.github.jiahut.demo.service
+package com.github.jiahut.demo.repository
 
 import org.springframework.data.repository.CrudRepository
 import java.lang.Long

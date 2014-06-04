@@ -6,7 +6,7 @@ import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.{RequestMapping,RequestMethod}
 
 import com.github.jiahut.demo.domain._
-import com.github.jiahut.demo.service._
+import com.github.jiahut.demo.repository._
 
 @Controller
 @RequestMapping(Array("/users"))
