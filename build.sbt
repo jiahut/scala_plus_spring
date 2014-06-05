@@ -6,6 +6,8 @@ scalaVersion := "2.10.4"
 
 sbtVersion := "0.13.1"
 
+javaHome := Some(file("/home/jazz/dev/jdk1.7.0_25"))
+
 seq(webSettings : _*)
 
 libraryDependencies ++= Seq(
@@ -36,3 +38,6 @@ libraryDependencies ++= Seq(
 // Repositories
 // resolvers += "Maven Central Server" at "http://repo1.maven.org/maven2"
 resolvers += "Spring snapshot repository"  at "http://maven.springframework.org/snapshot"
+
+// set fullClasspath in Runtime += Attributed.blank(file("/home/jazz/dev/jdk1.7.0_25/jre/lib/rt.jar"))
+unmanagedJars in Compile += file("/home/jazz/dev/jdk1.7.0_25/jre/lib/rt.jar")
